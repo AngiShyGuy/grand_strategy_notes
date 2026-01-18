@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="angishyguyand39s-personal-grand-strategy-document">AngiShyGuy's Personal Grand Strategy Document</h1>
+<p>This is my own personal document for writing things down about the event so that I don't immediately forget the following day.</p>
+<p>All timestamps used in this document refer to the raw footage of that specific day.</p>
+<p>This document only contains information <strong>that I, AngiShyGuy, am aware of.</strong> It may be incorrect at times, and some of it is based on my subjective impressions. Any info that I may have accidentally gleamed from "metagaming" is not written down.</p>
+<h2 class="atx" id="nations">Nations</h2>
+<h3 class="atx" id="felspar">Felspar</h3>
+<p>A small, peaceful nation focusing on gathering resources using agriculture and mining.</p>
+<p>This is the nation I am a part of.</p>
+<h3 class="atx" id="aphales">Aphales</h3>
+<p>A small, peaceful nation focusing on gathering materials. They have several underground bunkers.</p>
+<p>This nation is fairly similar to Felspar, to the point where there were, at some point, talks of the two nations merging.</p>
+<h3 class="atx" id="arstblockzka">Arstblockzka</h3>
+<p>An underground civilisation focused on mining.</p>
+<p>Had an alliance with the Vascilescu family.</p>
+<h3 class="atx" id="britannia">Britannia</h3>
+<p>I don't know much about these guys.</p>
+<p>Their leader was killed on Day 3 by the Vasilescu Family. The person who ordered the hit was TripleLion from Skylands.</p>
+<h3 class="atx" id="evil-lair">Evil Lair</h3>
+<p>A mysterious group comprised of several popular StateSMP members.</p>
+<p>I know nothing about them.</p>
+<h3 class="atx" id="the-famiglia">The Famiglia</h3>
+<p>A mysterious mafia organisation. I don't know anything about them and I only found out about their existance on Day 9.</p>
+<h3 class="atx" id="parasola-internationale">Parasola Internationale</h3>
+<p>An anarchist nation focusing on weapons, guns in particular. They have no leader. Instead, all decisions are made collectively.</p>
+<p>Their main goal is to turn their shore into a beautiful beach. For this purpose, talks of potential trade were discussed with Felspar and Aphales, due to their abundance of sand, which Parasola is sorely lacking.</p>
+<h3 class="atx" id="quartz-cloaks">Quartz Cloaks</h3>
+<p>I don't even know if this is a nation. It seems to just be one building, really.</p>
+<p>Regardless, it's a politically neutral place where meetings are held.</p>
+<h3 class="atx" id="skylands">Skylands</h3>
+<p>A nation located in the sky. They specialize in airborne technologies such as planes.</p>
+<p>Responsible for the killing of the leader of Umi, and its subsequent annexation. These actions worried several of the smaller nations, but Skylands insists that they are peaceful, and that Umi had initiated the conflict.</p>
+<p>Seemed to be invading Chudhelm on Day 3, although I was not present long enough to witness the outcome.</p>
+<p>Annexed several territories on Day 9 but was ultimately taken down by the nation of Borealis. ...I think.</p>
+<h3 class="atx" id="the-vasilescu-family-or-andquotthe-house-of-vandquot-or-just-andquothouse-vandquot">The Vasilescu Family (or "The House of V" or just "House V")</h3>
+<p>A tight-knit, invite-only nation. This group is politically neutral, offering hitman services to anyone as long as they can afford it.</p>
+<p>They were involved in the killing of Britannia's second-in-command, Evinkies.</p>
+<p>This group was the victim of an invasion from Felspar on Day 7, who sought to take down the family due to their paid assassination services being a threat to world peace, benefitting only the richest nations.</p>
+<p>Key members of the family were killed, but several still survived, taking refuge in neighboring nations.</p>
+<h3 class="atx" id="ground-zero">Ground Zero</h3>
+<p>A terrorist group focused on the destruction of Skylands. Originally a three-man team on Day 7, it has since expanded to include around 7 or 8 people.</p>
+<p>Engaged Skylands in war on Day 7, which had major knock-on effects for other operations (notably Felspar’s ability to strike the Vascilescu family).</p>
+<p>Apparently they went to war with literally everyone on Day 8 or something. I dunno, I was busy with other things.</p>
+<h2 class="atx" id="known-people">Known People</h2>
+<h3 class="atx" id="felspar-1">Felspar</h3>
+<ul>
+<li><p>AngiShyGuy ("Angi") - Fisherman / Miner / Sniper</p>
+</li>
+<li><p>iLikeTurtlee ("Turtle") - Farmer / Miner</p>
+</li>
+<li><p>UnverifiedxDD ("Unverified" or "xD") - Miner / Fisherman</p>
+</li>
+<li><p>mad_madds8 ("Mad") - Leader / Wall Builder</p>
+</li>
+<li><p>Dalla_23 ("Dalla") - Architect / Builder</p>
+</li>
+<li><p>RebelPongo ("Rebel" or "Pongo") - Military Chief</p>
+</li>
+<li><p>_ItzFabled_ ("Fabled")</p>
+<ul>
+<li><p>Former Britannia Member?</p>
+</li>
+<li><p>Joined Felspar after the successful invasion of the Vascilescu family on Day 7</p>
+</li>
+</ul>
+</li>
+<li><p>ChosenTurret1XD ("Chosen")</p>
+<ul>
+<li><p>The Original Britannia Leader</p>
+</li>
+<li><p>Joined Felspar on Day 9 just to take down Visegard</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="aphales-1">Aphales</h3>
+<ul>
+<li><p>Itz_Cassie ("Cassie") - Leader</p>
+<ul>
+<li>Was representing Aphales at the small nations meeting on Day 2.</li>
+<li>Was representing Aphales in the Felspar meeting on Day 6.</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="britannia-1">Britannia</h3>
+<ul>
+<li><p>Evinkies - Empress</p>
+<ul>
+<li>Killed on Day 3 (murder attributed to the Vasilescu Family)</li>
+</ul>
+</li>
+<li><p>DudiGuy - New Leader after Evinkies</p>
+<ul>
+<li><p>Was representing Britannia at the Quartz Cloaks meeting on Day 3. He was seeking justice for the killing of the leader of Britannia at the hands of the Vasilescu Family.</p>
+</li>
+<li><p>Really likes the word "sevenfold."</p>
+</li>
+<li><p>Was killed on Day 6.</p>
+</li>
+<li><p>His head was taken by Felspar from the Vascilescu Family's house on Day 7.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="evil-lair-1">Evil Lair</h3>
+<ul>
+<li><p>Microspr ("Microghost" or just "Micro")</p>
+<ul>
+<li><p>Showed up suddenly at Felspar on Day 1 and was given free cooked fish by AngiShyGuy (02:02:54)</p>
+</li>
+<li><p>Was given a Water Bottle ("alcohol") by AngiShyGuy</p>
+</li>
+</ul>
+</li>
+<li><p>madzvie</p>
+<ul>
+<li>Showed up suddenly at Felspar on Day 1 and was given free cooked fish by AngiShyGuy (02:02:54)</li>
+</ul>
+</li>
+<li><p>Graybytheway ("Gray")</p>
+<ul>
+<li><p>Showed up suddenly at Felspar on Day 1 and was given free cooked fish by AngiShyGuy (02:02:54)</p>
+</li>
+<li><p>Arrived late compared to her friends.</p>
+</li>
+<li><p>Said I was her "favorite person ever" so tbh I think i'm the real winner in this event</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="the-famiglia-1">The Famiglia</h3>
+<ul>
+<li><p>FlyingTooki ("Tooki")</p>
+<ul>
+<li><p>Was involved in some kind of coordinated assassination with Felspar citizens UnverifiedxDD and iLikeTurtlee on Day 4.</p>
+</li>
+<li><p>Killed Fabled on Day 9</p>
+</li>
+</ul>
+</li>
+<li><p>benjatrueno</p>
+<ul>
+<li><p>Former Britannia Citizen</p>
+</li>
+<li><p>Was involved in some kind of coordinated assassination with Felspar citizens UnverifiedxDD and iLikeTurtlee on Day 4.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="parasola-internationale-1">Parasola Internationale</h3>
+<ul>
+<li><p>FurizAlex ("Alex")</p>
+<ul>
+<li>Represented Parasola at the small nations meeting on Day 2.</li>
+<li>Represented Parasola in the Felspar meeting on Day 6.</li>
+</ul>
+</li>
+<li><p>Batteryboy3</p>
+<ul>
+<li>Was representing Parasola at the small nations meeting on Day 2.</li>
+</ul>
+</li>
+<li><p>DappyCatfish</p>
+<ul>
+<li>Was representing Parasola in the Felspar meeting on Day 6.</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="skylands-1">Skylands</h3>
+<ul>
+<li><p>MilliGraeme - Leader?</p>
+<ul>
+<li>Was representing the Skylands at the Quartz Cloaks meeting on Day 3</li>
+</ul>
+</li>
+<li><p>ManHattenMan</p>
+<ul>
+<li>Passed by Felspar on Day 1 and was given brand new shears by UnverifiedxDD (01:16:19)</li>
+</ul>
+</li>
+<li><p>saparata ("saps")</p>
+<ul>
+<li><p>I witnessed him killing Microspr during the Quartz Cloaks meeting on Day 3</p>
+</li>
+<li><p>I said hi to him once. That's about it.</p>
+</li>
+<li><p>Is he even part of Skylands lmao i dont remember why i put him here</p>
+</li>
+</ul>
+</li>
+<li><p>Greenspah</p>
+<ul>
+<li><p>Has a history of switching nations</p>
+</li>
+<li><p>Acted as a spy for Felspar within Skylands since Day 7 thanks to his pre-established friendship with UnverifiedxDD.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="serendipia">Serendipia</h3>
+<ul>
+<li><p>Coff3W - Leader</p>
+<ul>
+<li>Introduced herself to me at Felspar on Day 1. Gave me white wool as a gift. (1:57:00)</li>
+<li>Was at the small nations meeting on Day 2.</li>
+<li>I said my final goodbyes to her on Day 9 shortly before logging off.</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="vasilescu-family-or-andquothouse-vandquot">Vasilescu Family (or "House V")</h3>
+<ul>
+<li><p>amesterdam_ ("Ames") - Leader? I think?</p>
+<ul>
+<li>Was representing the Vasilescu Family at the Quartz Cloaks meeting on Day 3</li>
+<li>Killed by me and Fabled on Day 9</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="no-group">No Group</h3>
+<ul>
+<li><p>Thatderpdoe123</p>
+<ul>
+<li>Briefly introduced himself to me on the shore of Felspar on Day 1 (01:59:49)</li>
+<li>Barged into the small nations meeting on Day 2 to warn everyone of Skylands threatening other nations</li>
+<li>Visited Felspar on Day 3 just to check on us (1, 20:42)</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="unknown-affiliation">Unknown Affiliation</h3>
+<ul>
+<li><p>AFreakinTurkey ("Turkey") - Travelling Merchant</p>
+<ul>
+<li>Introduced himself to Felspar on Day 1 (1:22:29)</li>
+<li>Destroyed the Chudhelm cathedral on Day 9</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="admins">Admins</h3>
+<ul>
+<li><p>Lingulini - Event Organizer</p>
+<ul>
+<li>Set up Felspar's map borders on Day 1 (1:24:40)</li>
+<li>Declared the Skylands-Ground Zero encounter an official war on Day 7, which changed the strategic situation immensely at the time.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="enemies-and-grudges">Enemies and Grudges</h2>
+<h3 class="atx" id="the-nation-of-skylands">The Nation of Skylands</h3>
+<ul>
+<li>Huge risk of annexing any and all nations for personal gain. Threat to world peace.</li>
+</ul>
+<h3 class="atx" id="the-vascilescu-family">The Vascilescu Family</h3>
+<ul>
+<li>A nation of assassins willing to kill anyone for the right price. A price only affordable for the richest nations such as Skylands.</li>
+<li><strong>Invaded, bombed and killed by Felspar on Day 7.</strong> Some members survived but Felspar had no plans to finish them off unless provoked.</li>
+<li><strong>Amesterdam killed on Day 9 for transgressing peace terms and bombing Felspar after our invasion.</strong></li>
+</ul>
+<h3 class="atx" id="the-nation-of-visegard">The Nation of Visegard</h3>
+<ul>
+<li><p>Assisted in the bombing of Felspar alongside the Vascilescu family on Day 8.</p>
+</li>
+<li><p><strong>Wiped out and annexed by Felspar on Day 9.</strong></p>
+</li>
+</ul>
+<h3 class="atx" id="the-nation-of-arstblockzka">The Nation of Arstblockzka</h3>
+<ul>
+<li>Killed several Felspar members in coordination with the Vascilescu family on Day 9.</li>
+</ul>
+<hr>
+<h2 class="atx" id="day-summaries">Day Summaries</h2>
+<h3 class="atx" id="day-1---build-day">Day 1 - Build Day</h3>
+<p>I spawned on an island south of Italy with lots of bamboo and harvested a stack and a half of it.</p>
+<p>I swam my way to "France", got wood, then boated the rest of the way to Felspar.</p>
+<p>After all of Felspar was united (minus Dalla cause she was late), we all got to work. I spent my time fishing, while others alternated between fishing, mining, and travelling to other nations by boat. Our leader, Mad, decided to start building a big wall that would serve as the border of our nation.</p>
+<p>While fishing, I noticed a high number of people travelling across the shore by boat, with most of them being unaffiliated with any nation or group. This gave me the opportunity to introduce the nation of Felspar to them. None of them joined immediately, but several did say they would keep the invitation in mind.</p>
+<p>AFreakinTurkey showed up at our land to introduce himself as a wandering trader with a hillbilly accent. I guess this is the bit he's doing for this civilisation.</p>
+<p>Event organizer Lingulini showed up soon after to officially place Felspar on the global map. He did this because we had already basically set our own borders with Madds' wall.</p>
+<p>My session ended with the sudden appearance of Microspr and Madzvie. I recognized them from Ish's StateSMP. They asked me if I had seen a certain "black and purple" player, to which I responded no. It turned out this was their friend Graybytheway, who had issues finding the rest of the team.</p>
+<p>Micro and Madzvie mined some ore at the surface of Felspar before eventually finding Gray. They stuck around Felspar, though, and kept discussing some bizarre plan about kidnapping a player named SitzKrieg0. Admittedly, I was eavesdropping. Sorry, guys.</p>
+<p>I ended up giving all three of them one cooked fish each. Apparently, they were starving and desperate. This gave me the impression that either they weren't part of any nation, or they were making their own and hadn't settled yet.</p>
+<p>I logged off about 2.5 hours into the event. It was a "Build Day", meaning killing was banned and the session lasts for 5 hours instead of the usual 3.</p>
+<h3 class="atx" id="day-2">Day 2</h3>
+<p>When I logged back in I was greeted by Turtle, who was struggling with terraforming the land of Felspar. I suggested using dirt instead of sand by stealing some dirt from the unclaimed Plains biome between Felspar and Listenburg.</p>
+<p>Turtle also told me to make a gun. I crafted some kind of rifle which I was told was pretty cheap.</p>
+<p>While we were relaxing, word spread that apparently Skylands had declared war on the nation of Umi. I learned that Skylands is an extremely dangerous nation due to it having several violent trigger-happy people in it such as SitzKrieg0 and TripleLion.</p>
+<p>In a matter of minutes, Umi had collapsed and been annexed by Skylands, increasing their territory.</p>
+<p>I learned from Turtle that there was a meeting going on at that very moment between all the small nation leaders at Aphales. The topic of the meeting was originally supposed to be about trade, but the recent annexation of Umi forced the leaders to discuss the danger that Skylands poses to all of them.</p>
+<p>Me and Turtle decided to make our way to the meeting, having little else to do. When we arrived, all the leaders were already there, with UnverifiedxDD representing Felspar in our absence. FurizAlex, the leader of Parasola Internationale, was not presentm so I was asked to go pick him up by UnverifiedxDD. Apparently, Alex was told the meeting was in 30 minutes, but plans had changed, and he needed to come right away.</p>
+<p>I went over to Parasola and passed on the message. Alex was mining so it would take some time for him to get to the meeting, so I decided to simply tell the citizens of Parasola and then go back to the meeting myself.</p>
+<p>Several things were discussed at the meeting, including:</p>
+<ul>
+<li><p>Unanimous condemning of Skylands' actions</p>
+</li>
+<li><p>Discussion over Skylands contacting each small nation and offering for them to merge with Skylands.</p>
+</li>
+<li><p>The possibility of contacting other nations so that they could accept refugees in case of displacement. Nations such as Quartz Cloaks and Chudhelm were mentioned.</p>
+</li>
+<li><p>Itz_Cassie suggested that she welcome refugees to her nation, Aphales, but was incredibly upset when the possibility was rejected due Aphales was directly in Skylands' line of sight.</p>
+</li>
+<li><p>Isolated player Thatderpdoe123 barged into the meeting to warn us of Skylands' potential upcoming invasions of the small nations.</p>
+</li>
+</ul>
+<p>Another meeting is to be hosted on Day 3 with every nation leader at the Quartz Cloaks.</p>
+<p>After the meeting ended and the leaders had left, Aphales, Parasola and Felspar stuck around so they could discuss potential trade together. Alex mentioned how his nation was in dire need of sand, a resource that Aphales and Felspar have an abundance of due to being located near deserts.</p>
+<p>Then, suddenly, several members of Skylands descended on a flying vehicle directly onto the meeting, including SitzKrieg0! This seemed to be little more than an intimidation tactic, and it did definitely frighten us. They soon left without much of a fuss.</p>
+<p>Once our little trade meeting was over, we decided to go back home.</p>
+<p>We briefly started terraforming our land by taking the sand and replacing it with dirt.</p>
+<p>I had to log off at midnight, 2 hours into the session.</p>
+<h3 class="atx" id="day-3">Day 3</h3>
+<p>I spent about an hour and a half mining in Felspar for more minerals that we lacked due to crafting guns for protection.</p>
+<p>During this mining session, Evinkies, some important leader at Britannia, was slain.</p>
+<p>At the 1h30 mark, me, UnverifiedxDD and our leader Mad all went to the Quartz Cloaks for their meeting that would assemble all nation leaders, or at least most of them. The three of us would represent Felspar.</p>
+<p>Here are a few summary points of the meeting, copied from Mad's notes:</p>
+<ul>
+<li><p>Britania was going bonkers over Evinkies death at the hands of, apparently, the Vasilescu Family, promising "SEVEN FOLD" this and "SEVEN FOLD" that.</p>
+</li>
+<li><p>House V caught a few strays for assisting in Evinkies assassination, though most people agreed on the conclusion that it was just business as they ARE impartial towards each nation.</p>
+</li>
+<li><p>Skylands, after getting their first acusation tried to do some main character moment bs, and then went on yapping about how they were really the "most peaceful and helpful nation" and how they arent "The Big Bad all of you think we are"</p>
+</li>
+<li><p>Saparata killed Microspr at the meeting place, then got killed himself. I believe both were revived.</p>
+</li>
+<li><p>Cassie, Aphales leader, brought up how all of the smaller nations (ours included by name) were "afraid" of skyland and weary of just alll the large nations in general</p>
+</li>
+<li><p>Skylands left mid meeting, and the meeting ACTUALLY ended later with news that Skyland was invading Chudhelm.</p>
+</li>
+</ul>
+<p>I logged off shortly after the meeting ended, at the 2h15 mark roughly. The day was extended by 30 minutes due to the meeting.</p>
+<p>Also I think there was some kind of trial at Chudhelm at the beginning of the day. I didn't go. Never been there, actually.</p>
+<h3 class="atx" id="day-4">Day 4</h3>
+<p>I went chatted with my nation and went mining at the beginning of the day.</p>
+<p>At the 1 hour mark approximately, I attended a wedding at Chudhelm between ghostizg and NgoWay. A ton of people from all around the world attended it as well.</p>
+<p>The marriage was pretty standard. Except for the bride ghostizg getting assassinated at the end causing everyone to run away. But apart from that, CLASSIC wedding affair.</p>
+<p>The whole thing took around 20 minutes.</p>
+<p>After that, I went mining for the rest of the day. Although I did overhear some people of my nation talking about some kind of assassination plot that happened while I was away, and how apparently nobody picked up his stuff. They, alongside two people from another nation who had coordinated with them, FlyingTooki and benjatrueno, went to try and find the stuff, but were unsuccessful.</p>
+<p>I surveyed them from the air using a quadcopter during this, along with RebelPongo, so I managed to gleam some partial context.</p>
+<p>More importantly, though, me and Pongo spotted some Skylandian aircrafts surveying our land, likely looking for weak spots. A bad sign of things to come.</p>
+<p>After some more mining, I logged off at the 2h50 mark, 10 minutes before the server would close.</p>
+<h3 class="atx" id="day-5---build-day">Day 5 - Build Day</h3>
+<p>I went mining for about an hour before going a world tour with Turtle to check out a bunch of places.</p>
+<p>We visited:</p>
+<ul>
+<li>Listenburg</li>
+<li>The Outback</li>
+<li>Frostguard</li>
+<li>Chudhelm</li>
+<li>Judas Sceau News</li>
+<li>Laurel's Matchmaking</li>
+<li>Snowdinavia</li>
+<li>Eclipse Office</li>
+<li>Pokemon Center</li>
+<li>Visegrad</li>
+<li>Artist's Shack</li>
+<li>Teutonia</li>
+<li>The Order of the End</li>
+<li>Borealis</li>
+<li>The Bazaar</li>
+<li>Red Cube Unity</li>
+<li>The Wizard's Mountain</li>
+<li>Parasola Internationale</li>
+<li>Aphales</li>
+</ul>
+<p>I spent my remaining 20 minutes mining and then logged off at the 2h20 mark approximately.</p>
+<h3 class="atx" id="day-6">Day 6</h3>
+<p>This day was entirely spent on getting resources for our new plan that was conceived by Pongo the day prior: Operation V-Day: An operation focused on the annihilation of the Vascilescu Family, a group of assassins for hire. The continued existance of this group only benefits the richest nations such as Skylands, as poorer ones can't afford to place hits.</p>
+<p>The murder of Evinkies demonstrated that the Vascilescus wouldn't take responsibility for their assassinations, deeming it as "just business", and emploring world leaders to punish those who place the hits rather than the actual killers. However, the Vascilescus also refused to tell anyone who actually ordered the hit. And so, any murders that the assassins would do couldn't be brought to justice.</p>
+<p>For these reasons, the Vascilescu family was deemed a threat to world peace, and Felspar decided to deliver justice on its own.</p>
+<p>The plan was to bomb their big mansion before executing all the members. Anticipating retaliation from Skylands, a massive nation that has previously paid the Vascilescus for a hit, we would get our allied nations to intercept Skylandian aircrafts and take them down, potentially using this opening to take down their nation as well.</p>
+<p>In the best case scenario, this would lead to us wiping out the Vascilescu Family and Skylands in one swoop.</p>
+<p>This plan was heavily reliant on us actually having allied nations, though, and they had to agree to help with firepower.</p>
+<p>Felspar leader Mad, towards the beginning of the day, went to a meeting in Serendipia, which is on the far east side of the map, opposite of Felspar, in order to convince their leader to help us. I don't know if other nation leaders were present as well. I'm unsure what exactly transpired, but it seemed that they couldn't reach an agreement.</p>
+<p>Later in the day, we met with the leaders of Parasola, Aphales, and some other smaller nation, I don't remember which one. But alas, we were unable to convince any of them to join our cause. We only barely managed to convince them to give us some resources, but it wasn't the desired result.</p>
+<p>Apparently, the common issue is that almost all nations were on very good terms with the Vascilescu Family. It is unclear how these "good terms" would help them at all, given that the family's loyalty belongs only to the highest bidder, but I digress.</p>
+<p>Things were looking grim for the plan, and it only got worse. We entrusted former Britannia leader _ItzFabled_ with our plan details so that he could help convince other leaders, but all he ended up doing was leaking the plan to Skylands and <strong>the Vascilescu family itself</strong>. It's very likely other nation leaders were aware as well.</p>
+<p>The day ended in a decisive failure. Team morale was shot, and the fate of the plan was in question.</p>
+<p>Here is the (potentially non-exhaustive) list of nations that were aware about our plan to invade the Vascilescu house by this point:</p>
+<ul>
+<li><p>Aphales</p>
+</li>
+<li><p>Parasola International</p>
+</li>
+<li><p>Helvetica</p>
+</li>
+<li><p>Britannia</p>
+</li>
+<li><p>Chudhelm</p>
+</li>
+<li><p>Serendipia</p>
+</li>
+<li><p>Skylands</p>
+</li>
+<li><p>Vascilescu Family*</p>
+</li>
+</ul>
+<p>*may or may not have received the news early into Day 7 instead.</p>
+<p>I logged off the server at the 2h mark.</p>
+<p>Also apparently DudiGuy died or something idk lol</p>
+<h3 class="atx" id="day-7">Day 7</h3>
+<p>The day started with a little bit of good news for the plan.</p>
+<p>A friend of Unverified's, Greenspah, who was also a citizen of Skylands, agreed to act as our spy. Apparently he had a history of constantly switching nations. He had basically toured the world at this point. Greenspah told us that Skylands may not even care for the destruction of the Vascilescu family, since they were more busy with harassment from another group consisting of 0neDrew, HToon, and more.</p>
+<p>Additionally, Pongo managed to convince a few more independant people to aid us.</p>
+<p>Things were looking up!</p>
+<p>Unfortunately it wouldn't last long, as we would receive confirmation that the Vascilescu family knew of our plan, with one member hopping in Pongo's DMs asking him why we were planning on bombing them.</p>
+<p>In response, Pongo jokingly responded with "look up". This actually, unironically, caused the family to start freaking out. He would quickly backtrack and assure them it was just a joke, but this seemingly had a very interesting consequence.</p>
+<p>Greenspah quickly messaged us with some breaking news. Apparently, out of the blue, Skylands had started planning on "checking up" on the Vascilescu family, something they had never done before. At least, I assume they hadn't. They didn't seem like the type.</p>
+<p>On one hand, this confirmed that Skylands WAS planning on intercepting us, which was bad news for the plan. But on the other hand, since we now knew this information, we could avoid needlessly throwing our lives away, as we knew we didn't have the manpower to take down Skylandian forces, given how we were rejected by basically every nation.</p>
+<p>So for a little while, the plan was basically in shambles. We had essentially no hope of winning. Yet, some of us still wanted to go along with it, even if we died, purely for the fun of it.</p>
+<p>We even had Mobmastermod, the leader of Helvetica, visit us with a signed book essentially commanding us to NOT invade the Vascilescu mansion, stating that it was needless bloodshed and that we would surely die anyways.</p>
+<p>This brazen act angered many of us. Some were more motivated to invade because of it, but for pretty much everyone, the fact that we were surely dead men had basically shot the team's morale down to bedrock.</p>
+<p>But suddenly, a miracle occured.</p>
+<p>Out of seemingly thin air, a group called "Ground Zero"" started taking Skylands' territory in Africa.</p>
+<p>Event organizer Lingulini declared this to be an official act of war. Skylands and Ground Zero were officially locked in conflict and, most crucially for us, <strong>were not allowed to desert their nations.</strong> The two groups were forced to be in either Ground Zero or Skylands territory for the duration of the war.</p>
+<p>The entirety of Felspar immediately realized what this meant: <strong>Skylands could no longer intercept our invasion of the Vascilescu family.</strong></p>
+<p>Everyone in Felspar immediately hauled ass to get to the Vascilescu mansion.</p>
+<p>Our assault was fast and ferocious. So fast that by the time the moderators announced the conflict to the world, the battle was practically over.</p>
+<p>Details are a little blurry, but I believe we killed about 3 members of the family, most notably their builder, and Phasmi, who was probably important, I think. I didn't bother doing research into their members, that was Pongo's job.</p>
+<p>I remember Phasmi calling us pussies right before we finished him off. That was funny. I feel like he took it a bit too seriously considering this is Minecraft but, like, what do I know. This civilisation shit is SERIOUS 💔.</p>
+<p>Unfortunately, several family members managed to escape, most notably Amesterdam, who was basically their leader from what I understood.</p>
+<p>Our invasion went so smoothly that it was almost bizarre. The family was fully aware of our plan, just like basically every nation on the server. It was basically common knowledge at this point. So why did it feel like they didn't prepare at all? As I'm writing this, I still don't know the answer.</p>
+<p>Small sidenote here, neither I nor anyone else at Felspar had any idea who or what Ground Zero was. So when I saw that they were in battle with Skylands, and that the Skylanders were apparently being incompetent (according to chat messages I gleamed), I assumed that Ground Zero had the ability to wipe that nation off the map. This did not end up happening, unfortunately. Would've been really convenient if our two opps got obliterated within a day, but alas...</p>
+<p>I'm not exactly sure how their battle ended as I wasn't paying attention. I'm pretty sure Skylands was still alive though.</p>
+<p>After a successful invasion, I logged off at the 2h mark.</p>
+<p>Afterwards, the nation of Felspar put out an official message on Judas Sceau News with terms and conditions for continued co-existance with the remaining members of the Vascilescu family, namely:</p>
+<ul>
+<li><p>Renouncing their roles as assassins for hire</p>
+</li>
+<li><p>Not provoking Felspar or other nations</p>
+</li>
+</ul>
+<h3 class="atx" id="day-8">Day 8</h3>
+<p>Today was a massive failure.</p>
+<p>We spent an hour tunneling underground so that we could meet up members of a team called "New Tripolitania" who wanted to take control of Britannia to mobilize all its army to fight Skylands.</p>
+<p>Meanwhile, Visegrad, alongside the remaining Vascilescus, bombed our nation, disrespecting our proposed peace terms.</p>
+<p>When we got there, though, communications quickly broke down. No one was exactly sure what the plan was. To top it off, most members of New Tripolitania were killed via gunfire from other players in an orchestrated trap.</p>
+<p>With this failure, Felspar, who was mostly unharmed minus our leader Mad dying, retreated back to its bombed territory.</p>
+<p>The only thing left for us to do was to take our revenge on Visegrad and the remaining leader of the Vascilescu family, Amesterdam, but it would have to wait until Day 10.</p>
+<h3 class="atx" id="day-9---the-end">Day 9 - The End</h3>
+<p>All Felspar citizens, plus new member Chosen (ChosenTurret1XD), immediately met up and flew over to Visegard and laid in hiding.</p>
+<p>We quickly wiped out all Visegard citizens and annexed their territory for bombing our land. I got 1 sniper kill, King_Merti. Epic.</p>
+<p>We took the opportunity to annex the Vascilescu house, which we promptly burned down.</p>
+<p>While we were having a scuffed little meeting behind the Vascilescu house to decide our next course of action, out of nowhere, several members of Arstblockzka, alongside Amesterdam, invaded and started shooting.</p>
+<p>Unfortunately, Pongo, Della, and Chosen perished in the attack. This left two people left: Me and Turtle. We both tunnelled down until it was safe.</p>
+<p>Since I had to log out soon, I entrusted Turtle with all my valuables and guns, and tried to do reconnaissance outside. Turtle gave me his old SMG so that I had some basic protection.</p>
+<p>As my final act, I decided to go on a suicide mission to take down Amesterdam. Arstblockzka has some really bumpy terrain, to put it mildly. It was very difficult to navigate, but I managed to get close to the Vascilescu house, where they would likely by hiding.</p>
+<p>On the way there, Fabled logged on. He was extremely close to the house and we managed to meet up.</p>
+<p>Slowly but surely, we snuck our way closer and closer to the house, hiding behind the thick trees.</p>
+<p>Inside the house was Ames alongside news reporter JayWhere and RownFall, Varnelis, s_imp and Katsumi09. I believe they were Arstblockzka members.</p>
+<p>Eventually, the group walked outside. Ames made the critical mistake of getting distracted and running from her team along the side of the house where we were waiting.</p>
+<p>Me and Fabled revealed ourselves and struck hard, and Ames was no more.</p>
+<p>I started running as I had been hit hard, but what I didn't know was that Fabled had stayed and killed several more of them before eventually being killed in action. My biggest regret was not helping him when he needed it. </p>
+<p>I met up with Turtle in Serendipia where we were graciously given temporary shelter by Coff3W and her friend nullrayz. I believe they were the only inhabitants of the nation.</p>
+<p>Since my time was running out, I left Turtle in Serendipia and went in search of any intel that could point to the location of a player named FlyingTooki, who was the one who killed Fabled. He was part of the mafia called "The Famiglia". I didn't even know there was a mafia, honestly.</p>
+<p>Unfortunately, I couldn't find any info. I even shot a player, TheKitsunetta, until she was downed and forced her to tell me where Tooki was, but she didn't even know who he was...</p>
+<p>I logged off unceremoniously at the 2h40 mark.</p>
+<p>(Ideally, I'd like to change that ending in my eventual video summary of the event. No idea how, though...)</p>
+<h2 class="atx" id="closing-thoughts">Closing Thoughts</h2>
+<p>This was my first ever civilisation event! I had a lot of fun, definitely a really cool experience and I'd love to do it again sometime.</p>
+<p>Shoutouts to the Vascilescu Family! They were absolutely the best enemies we could've asked for. Everything meshed together into such a cool plotline, for us at least. I can't wait to adapt it into a Youtube video someday.</p>
+<p>Hopefully the Vascilescus don't hate us too much. We DID bomb their house that took ages to make. Sorry! It did look good... but it also looked great on fire.</p>
+</article>
+</body>
+</html>
